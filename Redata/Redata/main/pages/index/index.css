@@ -1,0 +1,317 @@
+.body-index {
+    margin: 0;
+    overflow-y: hidden;
+    background: var(--color-bright-secondary);
+    background: -webkit-linear-gradient(to left, var(--color-bright-primary), var(--color-bright-secondary));
+    background: linear-gradient(to left, var(--color-bright-primary), var(--color-bright-secondary));
+}
+
+.container {
+    padding: 32px;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.logo {
+    max-height: 140px;
+    max-width: 140px;
+}
+
+.member-login-container {
+    padding: 0 24px;
+    margin-top: -8px;
+    text-align: -webkit-center;
+}
+
+.register-container {
+    font-family: var(--font-primary), serif;
+    font-size: 16px;
+    display: flex;
+    place-content: center;
+    padding-top: 24px;
+}
+
+.register-button {
+    padding: 4px 12px;
+    border-radius: 6px;
+    background-color: var(--color-primary);
+    color: var(--color-bright-primary);
+    border: 1px solid var(--color-primary);
+    text-transform: uppercase;
+    position: relative;
+    top: -7px;
+    font-family: var(--font-primary), serif;
+    line-height: 24px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.register-button:focus {
+    color: var(--color-primary);
+    background: transparent;
+    outline-color: linear-gradient(to right, var(--color-secondary), var(--color-ternary));
+}
+
+.register-label {
+    padding-right: 8px;
+}
+
+.member-login-wrapper {
+    display: flex;
+    flex-flow: column;
+    padding: 24px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid black;
+    max-width: 40vw;
+}
+
+.member-login-title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: capitalize;
+    padding-bottom: 12px;
+    text-align: center;
+    color: black;
+    font-family: var(--font-primary), serif;
+}
+
+.login-form-container {
+    display: flex;
+    flex-flow: column;
+}
+
+.login-form-details-container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.login-login-button-container {
+    padding: 8px 0;
+}
+
+.login-form-input-wrapper {
+    display: flex;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.login-form-input-icon {
+    padding: 8px;
+    border-radius: 4px;
+    max-height: 50px;
+    border-right: 1px solid black;
+}
+
+.fa {
+    font-size: 40px;
+}
+
+.login-form-input-text {
+    padding: 16px 8px;
+    width: 100%;
+    line-height: 24px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 0;
+    font-family: var(--font-secondary), sans-serif;
+    background-color: transparent;
+}
+
+.login-form-input-text::placeholder {
+    color: black;
+}
+
+.login-form-input-text:focus {
+    box-shadow: 0 0 1px 1px black;
+    outline: 0;
+}
+
+.login-button {
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-family: var(--font-primary), serif;
+    padding: 16px 32px;
+    text-transform: uppercase;
+    line-height: 24px;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--color-bright-secondary);
+    width: 100%;
+    background: linear-gradient(to right, var(--color-secondary), var(--color-ternary));
+    text-align: center;
+    position: relative;
+    transition: 0.4s;
+}
+
+.login-button:focus {
+    color: var(--color-primary);
+    background: transparent;
+    outline-color: linear-gradient(to right, var(--color-secondary), var(--color-ternary));
+}
+
+.login-help-container {
+    display: flex;
+    padding: 8px 0;
+    font-size: 16px;
+    line-height: 18px;
+    justify-content: space-between;
+    font-family: var(--font-primary), serif;
+}
+
+.forgot-password {
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    font-family: var(--font-primary), serif;
+}
+
+.remember-me-checkbox-wrapper {
+    position: relative;
+    cursor: pointer;
+}
+
+.remember-me-checkbox-wrapper span {
+    position: relative;
+    top: -2px;
+}
+
+.remember-me-checkbox-wrapper input[type="checkbox"] {
+    position: absolute;
+    opacity: 0.0001;
+    width: 16px;
+    height: 16px;
+    left: -1px;
+    margin: 0;
+}
+
+.remember-me-checkbox-wrapper input[type="checkbox"]:focus + svg {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+.remember-me-checkbox-wrapper input[type="checkbox"]:focus:not(:focus-visible) + svg {
+    outline: none;
+}
+
+.remember-me-checkbox-wrapper svg {
+    width: 16px;
+    height: 16px;
+}
+
+.remember-me-checkbox-wrapper svg * {
+    transition: all 0.1s linear;
+}
+
+.remember-me-checkbox-wrapper input[type="checkbox"]:checked + svg .remember-me-checkbox__background {
+    fill: var(--color-bright-primary);
+    stroke: var(--color-primary);
+}
+
+.remember-me-checkbox-wrapper input[type="checkbox"]:checked + svg .remember-me-checkbox__checkmark {
+    stroke: var(--color-primary);
+}
+
+@media screen and (min-width: 1919px) {
+    .container {
+        padding: 64px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .member-login-wrapper {
+        border: none;
+        max-width: 75%;
+    }
+
+    .member-login-title {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .login-button {
+        font-size: 18px;
+        line-height: 20px;
+        padding: 8px 16px;
+    }
+
+    .login-form-input-text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .fa {
+        font-size: 25px;
+    }
+
+    .login-form-input-icon {
+        padding: 12px 8px;
+    }
+
+    .login-help-container {
+        font-size: 12px;
+    }
+
+    .forgot-password-container {
+        margin-top: -2px;
+    }
+
+    .register-container {
+        padding-top: 0;
+    }
+
+    .remember-me-checkbox-wrapper span {
+        font-size: 12px;
+    }
+
+    .remember-me-checkbox-wrapper svg {
+        width: 14px;
+        height: 14px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .member-login-wrapper {
+        max-width: 100%;
+    }
+
+    .container {
+        padding: 24px 16px 16px;
+    }
+
+
+    .register-container {
+        font-size: 14px;
+    }
+
+    .register-button {
+        padding: 2px 12px;
+    }
+}
+
+@media screen and (-ms-high-contrast: active) {
+    .remember-me-checkbox-wrapper .remember-me-checkbox__background {
+        stroke: windowText
+    }
+
+    .remember-me-checkbox-wrapper input[type="checkbox"]:checked + svg .remember-me-checkbox__background {
+        fill: windowText;
+    }
+
+    .remember-me-checkbox-wrapper input[type="checkbox"]:checked + svg .remember-me-checkbox__checkmark {
+        stroke: highlight;
+    }
+}
+

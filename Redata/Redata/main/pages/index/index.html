@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <meta name="description" content="ReData Login Page" />
+
+  <title>ReData</title>
+
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700;900&family=Montserrat:wght@300&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet">
+</head>
+
+<body clas="body-index" style="background-color: #7FA9E8">
+  <div class="container" id="container">
+    <div class="logo-container">
+      <img alt="ReData" class="logo" id="#logo" src="../../../assets/logo3.png">
+    </div>
+
+    <div class="member-login-container">
+      <div class="member-login-wrapper">
+        <div class="member-login-title">Member Login</div>
+
+        <form class="login-form-container" id="#loginForm">
+          <div class="login-form-details-container">
+            <div class="login-form-input-wrapper">
+               <span class="login-form-input-icon">
+                 <i class="fa fa-address-book"></i>
+               </span>
+	          <label for="#emailInput"></label>
+              <input
+                class="login-form-input-text"
+                id="#emailInput"
+                maxlength="20"
+                minlength="3"
+                placeholder="Email"
+                required
+                type="text"
+              />
+            </div>
+
+            <div class="login-form-input-wrapper">
+              <span class="login-form-input-icon">
+                  <i class="fa fa-key"></i>
+              </span>
+	          <label for="#passwordInput"></label>
+              <input
+                class="login-form-input-text"
+                id="#passwordInput"
+                maxlength="20"
+                minlength="8"
+                placeholder="Password"
+                required
+                type="password"
+              />
+            </div>
+          </div>
+          <div class="login-login-button-container">
+            <button
+		       class="login-button"
+		       id="#loginButton"
+		       type="submit"
+            >
+	            Login
+            </button>
+          </div>
+        </form>
+
+        <div class="login-help-container">
+          <label class="remember-me-checkbox-wrapper" for="#rememberMe">
+            <input id="#rememberMe" type="checkbox" />
+            <svg aria-hidden="true" focusable="false" height="35" viewBox="-4 -4 39 39" width="35">
+              <rect
+                class="remember-me-checkbox__background"
+                fill="none"
+                height="35"
+                rx="6"
+                ry="6"
+                stroke="currentColor"
+                stroke-width="3"
+                width="35"
+                x="-2"
+                y="-2"
+              ></rect>
+              <polyline
+                class="remember-me-checkbox__checkmark"
+                fill="none"
+                points="4,14 12,23 28,5"
+                stroke="transparent"
+                stroke-width="4"
+              ></polyline>
+            </svg>
+            <span>Remember me?</span>
+          </label>
+
+          <div class="forgot-password-container">
+            <span class="forgot-password" id="#forgotPassword">Forgot password?</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="register-container">
+      <span class="register-label">Don't have an account?</span>
+      <button class="register-button" id="#registerButton">Register Here</button>
+    </div>
+</div>
+</body>
+</html>

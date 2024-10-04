@@ -1,0 +1,181 @@
+body{
+    background:#CAD2E7;
+}
+
+.nav-bar{
+    position: relative;
+    left: 0px;
+    padding-top: 10%;
+    right: 0px;
+    background: #E1F2FE;
+    display: flex;
+    flex-direction: column; 
+    align-content: space-between;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 4%;
+    width: 100%;
+    background-color: gray;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-title{
+    float: left;
+    font: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color:#66503D;
+    font-size: 30px;
+    padding-left: 6px;
+}
+
+.index-header{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    background:#66503D;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-image{
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-bottom: 4px;
+    width: 10%;
+    height: auto;
+    justify-content: flex-start;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color:#66503D;
+}
+.modal {
+  border: 1px solid black;
+  display: none;
+}
+.header-center {
+    float: none;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+   font-family: 'Roboto', sans-serif;
+}
+.header-center .homebtn{
+  padding-left:45%;
+}
+.header-center .homebtn a{
+  color:white;
+  font-size:20pt;
+}
+.header-center input[type=text] {
+  padding: 6px;
+  font-size: 25px;
+  border: none;
+  border-radius:9999px;
+  outline:none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-center .search-container .searchbtn {
+  float: right;
+  margin-top: 0%;
+  margin-right: 10%;
+  background: transparent; /*aici nu am poza de pe google */
+  font-size: 4px;
+  border: none;
+  cursor: pointer;
+  color:#4f98ca;
+  outline: none;
+}
+.searchbtn i{
+  color:black;
+}
+.header-right{
+  float:right;
+  padding-top:-45px;
+  padding-right:20px;
+}
+.header-right .login{
+  background-color: #CAD2E7;
+  font-family:'Roboto', sans-serif;;
+  color:#66503D;
+  border-color:#77625C;
+  border-radius:9999px;
+  padding:5px 25px;
+  font-size:15pt;
+  font-weight: bold;
+  margin-right:10px;
+  outline:none;
+}
+.header-right .signup{
+  background-color:#CAD2E7;
+  font-family: 'Roboto', sans-serif;
+  color: #66503D;
+  border-color:#77625C;
+  border-radius:9999px;
+  padding:5px 25px;
+  font-size:15pt;
+  font-weight: bold;
+  outline: none;
+}
+.page-content h1,button,.content,.subreddit{
+  font-family: 'Roboto', sans-serif;
+}
+.subreddit{
+  background-color:#98D2EB;
+  color:#66503D;
+  font-family: 'Roboto',sans-serif;
+  font-weight: bold;
+  border-radius: 15%;
+}
+.content li{
+  color:white;
+}
+.button{
+  margin-top:2%;
+  margin-left:1%;
+  background-color:#66503D;
+  color:white;
+  font-family: 'Roboto',sans-serif;
+  font-weight: bold;
+  padding:1%;
+  font-size: 15pt;
+  border:none;
+}
+.button:hover{
+ background-color:#98D2EB;
+ color:black;
+}

@@ -1,0 +1,345 @@
+nav {
+    background-color: #d4e6da;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    align-items: center;
+    padding: 0 48px;
+    position: fixed;
+    border-radius: 5px;
+    margin:0;
+    height: 100px;
+    transition: height 0.3s ease-out;
+    width: calc(100% - 96px);
+    z-index: 100;
+}
+
+.navbar-icon {
+    display: none;
+}
+
+.navbar-wrapper {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+}
+
+.navbar-logo-img {
+    height: 80px;
+    width: auto;
+    display: inline-block;
+    transition: height 0.3s ease-out;
+}
+
+
+.navbar-items {
+    display: flex;
+    padding: 0 48px;
+}
+
+.navbar-item {
+    list-style: none;
+    padding: 15px;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    margin-right: 16px;
+}
+
+.navbar-items .navbar-item:last-child {
+    margin-right: 0;
+}
+
+.navbar-item:hover {
+    background-color: var(--color-secondary);
+}
+
+.navbar-item:hover .navbar-item-link {
+    color: var(--color-bright-primary);
+}
+
+.navbar-item-link {
+    color: var(--color-primary);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: var(--font-primary);
+}
+
+.navbar-search-wrapper {
+    padding: 0 48px;
+}
+
+.navbar-search {
+    display: flex;
+    background: transparent;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+}
+
+.navbar-search-data {
+    width: 100%;
+    height: 100%;
+    padding: 18px;
+    color: var(--color-dark);
+    font-size: 15px;
+    border: none;
+    font-weight: 500;
+    background: transparent;
+    font-family: var(--font-secondary);
+    box-sizing:border-box;
+    min-width: 30ch;
+}
+
+.navbar-search-data::placeholder {
+    color: var(--color-dark);
+}
+
+.navbar-search-data:focus {
+    outline: none;
+}
+
+.navbar-search-button {
+    padding: 15px;
+    color: var(--color-bright-primary);
+    font-size: 17px;
+    background: var(--color-primary);
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-search-button:hover {
+    background: var(--color-ternary);
+}
+
+.navbar-search-icon {
+    width: 40px;
+    text-align: center;
+    margin: 0 50px;
+    font-size: 18px;
+    color: var(--color-dark);
+    cursor: pointer;
+    display: none;
+}
+
+.navbar-profile-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    padding: 2px 8px;
+    cursor: pointer;
+    position: relative;
+    text-align: right;
+    white-space: nowrap;
+    justify-content: center;
+    align-self: flex-end;
+}
+
+.navbar-profile-pic-wrapper {
+    font-size: 25px;
+    color: var(--color-dark);
+}
+
+.navbar-profile-title {
+    color: var(--color-primary);
+    font-size: 25px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: var(--font-primary);
+    padding: 12px 8px ;
+}
+
+.navbar-profile-dropdown-icon {
+    padding: 16px 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.navbar-profile-dropdown-content {
+    position: absolute;
+    z-index: 1000;
+    top: calc(100% + 2px);
+    left: -25px;
+    box-shadow: 4px 4px 2px 4px rgba(0,0,0,0.62);
+    border-radius: 5px;
+    display: none;
+    width: 185px;
+    background: var(--color-bright-primary);
+}
+
+.navbar-profile-dropdown-content-wrapper {
+    padding: 12px;
+}
+
+.dropdown-item {
+    margin-bottom: 16px;
+    display: flex;
+    flex-flow: nowrap;
+}
+
+.dropdown-item:hover {
+    background-color: var(--color-secondary);
+}
+
+.dropdown-item:hover > * {
+    color: var(--color-bright-primary);
+}
+
+.dropdown-item a {
+    text-decoration: none;
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    padding: 1px 8px;
+    color: var(--color-primary)
+}
+
+.dropdown-item-icon {
+    font-size: 18px;
+    padding: 0 2px;
+}
+
+@media screen and (max-width: 1339px) {
+    nav {
+     width: calc((100% - 65px));
+     padding: 0 24px;
+    }
+
+    .navbar-logo-img {
+        height: 60px;
+    }
+
+    .navbar-items {
+        padding: 0 24px;
+    }
+
+    .navbar-item-link {
+        font-size: 18px;
+    }
+
+    .navbar-search-wrapper {
+        padding: 0 24px;
+    }
+
+    .navbar-search-data {
+        font-size: 13px;
+        padding: 15px;
+        min-width: 25ch;
+    }
+
+    .navbar-profile-pic-wrapper {
+        font-size: 30px;
+    }
+
+    .navbar-profile-title {
+        font-size: 22px;
+    }
+
+    .navbar-profile-dropdown-content {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    nav {
+        width: calc((100% - 55px));
+        box-shadow: 4px 0 1px 5px var(--color-ternary);
+    }
+
+    .navbar-items {
+        position: absolute;
+        top: calc(100% - 1px);
+        left: 0;
+        display: none;
+        z-index: 1000;
+        flex-flow: column;
+        background: var(--color-bright-primary);
+        box-shadow: 4px 4px 2px 4px rgba(0,0,0,0.62);
+        padding: 0 48px;
+    }
+
+    .navbar-icon {
+        display: inline-block;
+        font-size: 28px;
+        color: var(--color-dark);
+    }
+
+    .navbar-item {
+        padding: 8px 48px;
+        margin: 16px 0;
+    }
+
+    .navbar-logo {
+        padding: 0 36px;
+        order: 2;
+    }
+
+    .navbar-search-wrapper {
+        order: 3;
+        padding: 0 48px;
+    }
+
+    .navbar-search-data {
+        min-width: 25ch;
+    }
+
+    .navbar-profile-title {
+        font-size: 20px;
+    }
+
+    .navbar-profile-pic-wrapper {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    nav {
+        height: 80px;
+    }
+
+    .navbar-logo {
+        display: none;
+    }
+
+    .navbar-search-wrapper {
+        padding: 0 16px;
+    }
+
+    .navbar-search-data {
+        min-width: 10ch;
+    }
+
+    .navbar-profile-wrapper {
+        padding: 0 8px;
+    }
+
+    .navbar-profile-pic-wrapper {
+        padding: 0 6px;
+        font-size: 20px;
+    }
+
+    .navbar-profile-title {
+        display: none;
+    }
+
+    .navbar-profile-dropdown-icon {
+        font-size: 20px;
+    }
+
+    .navbar-profile-dropdown-content {
+        left: -85px;
+    }
+
+    .dropdown-item a {
+        font-size: 14px;
+    }
+
+    .navbar-item-link {
+        font-size: 14px;
+    }
+
+    .navbar-items {
+        padding: 0 24px;
+    }
+}
